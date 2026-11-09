@@ -1,0 +1,62 @@
+﻿# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test coverage
+.coverage
+.coverage.*
+htmlcov/
+
+# Environment variables and secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Airflow runtime files
+logs/
+airflow/logs/
+airflow.db
+airflow.db-*
+airflow.cfg
+webserver_config.py
+airflow-webserver.pid
+standalone_admin_password.txt
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+tmp/
+temp/
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+
+# Raw student datasets: keep the directory placeholder only
+/data/raw/**
+!/data/raw/**/
+!/data/raw/**/.gitkeep
+
+# Always allow directory placeholders
+!.gitkeep
